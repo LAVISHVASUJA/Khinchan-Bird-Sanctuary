@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>About US</title>
+		<link rel="icon" href="student.png"/>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;	
+			}
+			body{
+				height:100%;
+				width:100%;
+				background-color:#e7e7e4;
+				position:relative;
+				overflow-x:hidden;
+				overflow-y:hidden;
+			}
+			.background{	
+				position:absolute;
+ 				width:100%;
+				height:850px;
+				top:-850px;
+				z-index:-1;
+				background-color:rgba(0,0,0,0.7);
+			}
+			.footer{
+				background-color:#201711;
+				width:100%;
+				height:300px;
+				position:relative;
+				z-index:1;
+				top:300px;
+			}
+			.footer-div{
+				background-color:#e7e7e4;
+				width:100%;
+				height:800px;
+				position:relative;
+				z-index:1;
+				top:0px;
+			}
+			.footer-img{
+				width:100%;
+				height:100%;
+				position:absolute;
+				z-index:1;
+				top:0px;
+			}
+			.footer-img-scroller{
+				width:100%;
+				height:200px;
+				position:sticky;
+				z-index:1;
+				top:90%;
+				background-color:#e7e7e4;
+			}
+			.footer-heading{
+				width:400px;
+				color:white;
+				font-family:forte;
+				font-size:40px;
+				position:absolute;
+				top:70px;
+				left:190px;
+			}
+			.footer-link1{
+				width:150px;
+				position:absolute;
+				top:70px;
+				right:350px;
+			}
+			.footer-link2{
+				width:150px;
+				position:absolute;
+				top:70px;
+				right:100px;	
+			}
+			.footer-link_add{
+				text-decoration:none;
+				color:white;
+				font-size:25px;
+			}
+			.img{
+				position:fixed;
+				top:0px;
+				left:0px;
+				width:100%;
+				z-index:-2;
+			}
+			.img-div{
+				position:relative;
+				left:65px;
+				width:100%;
+				height:500px;
+				overflow:hidden;
+			}
+			.icon{
+				 color:#a47d55;
+				 text-decoration:none;
+			}
+			.icon:hover{
+				color:white;
+			}
+			.icon-hover1:hover{
+				background-color:white;
+			}
+			.list{
+				position:relative;
+				top:-550px;
+				font-family:Bradley Hand itc;
+				float:right;
+				right:300px;
+			}
+			.main{
+				top:0;
+				position:relative;
+				background-color:#e7e7e4;
+				z-index:1;
+				height:auto;
+				width:100%;
+			}
+			.menu{
+				position:absolute;
+				width:50px;
+				height:50px;
+				top:35px;
+				left:23px;
+				cursor:pointer;
+				text-align:center;
+				font-family:forte;
+				color:#a47d55;
+			}
+			.menu1{
+				width:28px;
+				height:2px;
+				margin-left:12px;
+				background-color:#a47d55;
+			}
+			.menu2{
+				width:28px;
+				margin-top:6px;
+				height:2px;
+				margin-left:12px;
+				background-color:#a47d55;
+				-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  				transition: width 1s;
+			}
+			.menu2:hover{
+				margin-left:18px;
+			}
+			.menu3{
+				width:28px;
+				height:2px;
+				margin-top:6px;
+				margin-left:12px;
+				background-color:#a47d55;
+			}
+			.page-div{
+				position:relative;
+				width:100%;
+				height:auto;
+				left:100px;
+				top:0px;
+			}
+			.page-title{
+				font-size:75px;
+				color:#FFCC66;
+				font-family:freestyle script;
+				position:relative;
+				top:-725px;
+				left:36%;
+			}
+			.slide{
+				background-color:#201711;
+				width:100px;
+				height:755px;
+				left:0;
+				top:0;
+				position:sticky;
+				text-align:center;
+				font-family:forte;
+				color:#a47d55;
+				z-index:1;
+				-webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+  				transition: width 1s;
+			}
+			.slide:hover{
+   				width:115px;
+				height: 755px;
+			}
+			.slide-inner{
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				position:relative;
+				margin: 0 auto;
+			}
+			.talk{
+				bottom:0;
+				width:100px;
+				height:80px;
+				position:absolute;
+				left:0;
+				cursor:pointer;
+			}
+			ul li a{
+				color:white;
+				display:block;
+				text-decoration:none;
+			}
+
+			ul li{
+				width:100%;
+				height:90px;
+				font-size:70px;
+				text-align:center;
+				list-style-type:none;
+			}
+
+			ul li a:hover{
+				color:#FFCC66;		
+			}
+			.welcome-div{
+				width:40%;
+				height:300px;
+				//background-color:#201711;
+				position:relative;
+				top:-630px;
+				font-family:Bradley Hand itc;
+				color:white;
+				left:100px;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="main">
+			<div class="slide">
+				<div class="slide-inner">
+					<div class="menu">
+						<a class="icon" style="position:relative; font-size:25px; top:10px;" href="new.html">X</a>
+					</div>
+					<div class="talk">
+						<a class="icon" style="font-size:25px; "href="talk.html">Talk</a>
+					</div>
+				</div>
+			</div>
+			<div class="page-div">
+				<a class="page-title" href="new.html">About US</a>
+				<div class="list">
+					<ul>
+						<li><a  target="_blank">Developer's</a></li>
+						<li><a href="https://www.facebook.com/AnirudhrocksinWorld" target="_blank">Anirudh Singh</a></li>
+						<li><a href="https://www.facebook.com/lavishvasuja5" target="_blank">Lavish Vasuja</a></li>
+						<li><a href="https://www.facebook.com/balvindersingh.shekhawat" target="_blank">Balvinder Singh</a></li>
+					</ul>
+				</div>
+			<div class="welcome-div">
+				<h1 style="font-size:45px;">Welcome<br></h1><br>
+				<p style="font-size:35px;"> Content <p>
+			</div>	
+			<div class="background"></div>	
+			<img class="img" src="img5a.jpg"/>
+			</div>
+		</main>
+		<div class="footer-div">
+			<div style-"width:100%; overflow:hidden;"><img class="footer-img" src="img0.jpg"/></div>
+			<div class="footer-img-scroller"></div>
+			<div class="footer">
+				<div class="footer-heading">
+					<p>You are welcome<br>for guidance.</p>
+				</div>
+				<div class="footer-link1">
+					<a class="footer-link_add" href="/">About Us</a>
+					<a class="footer-link_add" style="position:relative; top:7px;" href="contact.html">Contact</a>
+				</div>
+				<div class="footer-link2">
+					<a class="footer-link_add" href="https://twitter.com/login" target="_blank">Twitter</a>
+					<a class="footer-link_add" style="position:relative; top:7px;" href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a>
+					<a class="footer-link_add" style="position:relative; top:13px;" href="https://www.facebook.com/" target="_blank">Facebook</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>					

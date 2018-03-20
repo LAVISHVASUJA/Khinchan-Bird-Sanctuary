@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Student Login</title>
+		<link rel="icon" href="student.png"/>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;	
+			}
+			body{
+				height:100%;
+				width:100%;
+				background-color:#e7e7e4;
+				position:relative;
+				overflow-x:hidden;
+				overflow-y:hidden;
+			}
+			.img{
+				position:fixed;
+				top:0px;
+				left:0px;
+				width:100%;
+				z-index:-2;
+			}
+			.icon{
+				 color:#a47d55;
+				 text-decoration:none;
+			}
+			.icon:hover{
+				color:white;
+			}
+			.icon-hover1:hover{
+				background-color:white;
+			}
+			.log-in-wrap{
+				padding:20px;
+				height:260px;
+				width:40%;
+				top:-600px;
+				position:relative;
+				left:10px;
+			}
+			#login{
+				color:white;
+				font-size:17px;
+			}
+			.main{
+				top:0;
+				position:relative;
+				background-color:#e7e7e4;
+				z-index:1;
+				height:auto;
+				width:100%;
+			}
+			.menu{
+				position:absolute;
+				width:50px;
+				height:50px;
+				top:35px;
+				left:23px;
+				cursor:pointer;
+				text-align:center;
+				font-family:forte;
+				color:#a47d55;
+			}
+			.menu1{
+				width:28px;
+				height:2px;
+				margin-left:12px;
+				background-color:#a47d55;
+			}
+			.menu2{
+				width:28px;
+				margin-top:6px;
+				height:2px;
+				margin-left:12px;
+				background-color:#a47d55;
+				-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  				transition: width 1s;
+			}
+			.menu2:hover{
+				margin-left:18px;
+			}
+			.menu3{
+				width:28px;
+				height:2px;
+				margin-top:6px;
+				margin-left:12px;
+				background-color:#a47d55;
+			}
+			.page-div{
+				position:relative;
+				width:100%;
+				height:auto;
+				left:100px;
+				top:0px;
+			}
+			.page-title{
+				font-size:75px;
+				color:#a47d55;
+				font-family:freestyle script;
+				position:relative;
+				top:-725px;
+				left:36%;
+			}
+			.slide{
+				background-color:#201711;
+				width:100px;
+				height:755px;
+				left:0;
+				top:0;
+				position:sticky;
+				text-align:center;
+				font-family:forte;
+				color:#a47d55;
+				z-index:1;
+				-webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+  				transition: width 1s;
+			}
+			.slide:hover{
+   				width:115px;
+				height: 755px;
+			}
+			.slide-inner{
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				position:relative;
+				margin: 0 auto;
+			}
+			.talk{
+				bottom:0;
+				width:100px;
+				height:80px;
+				position:absolute;
+				left:0;
+				cursor:pointer;
+			}
+			ul li a{
+				color:white;
+				display:block;
+				text-decoration:none;
+				font-family:Bradley Hand itc;
+			}
+
+			ul li{
+				width:30%;
+				height:35px;
+				font-size:30px;
+				text-align:center;
+				list-style-type:none;
+				background-color:#201711;
+			}
+
+			ul li a:hover{
+				background-color:#FFCC66;
+				color:#a47d55;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="main">
+			<div class="slide">
+				<div class="slide-inner">
+					<div class="menu">
+						<div class="menu1 icon-hover1"></div>
+						<div class="menu2 icon-hover1"></div>
+						<div class="menu3 icon-hover1"></div>
+						<a class="icon" style="position:relative; font-size:20px; top:10px;" href="Menu.html">Menu</a>
+					</div>
+					<div class="talk">
+						<a class="icon" style="font-size:25px; "href="talk.html">Talk</a>
+					</div>
+				</div>
+			</div>
+			<div class="page-div">
+				<a class="page-title" href="new.html">Khichan Bird Sanctuary</a>
+				<div class="log-in-wrap">
+					<h1 style="font-family:Bradley Hand itc; color:#a47d55; font-size:50px;">REGISTERED CUSTOMERS</h1>
+							<div id="login">
+								<p style="font-family:Bradley Hand itc; color:#201711; font-size:30px;">If you have an account with us, please log in.</p>
+								<form>
+									<p>*Email Address</p>
+									<input type="text" style="width:100%; height:40px; font-size:30px"><br>
+									<p>*Password</p>
+									<input type="text" style="width:100%; height:40px; font-size:30px"><br>
+								</form><br>
+								<ul>
+									<li><a "href="#">LOGIN</a></li>
+								</ul>
+								<a href="#" style="text-decoration:none; font-family:Bradley Hand itc;"><font color="red">Forget your password?</font></a></p>
+							</div>
+				</div>
+			</div>	
+			<img class="img" src="img2.jpg"/>
+		</main>
+	</body>
+</html>				

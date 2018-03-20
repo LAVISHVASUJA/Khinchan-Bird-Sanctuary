@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Discover</title>
+		<link rel="icon" href="student.png"/>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;	
+			}
+			body{
+				height:100%;
+				width:100%;
+				background-color:#e7e7e4;
+				position:relative;
+				overflow-x:hidden;
+			}
+			.common{
+				font-family:forte;
+				font-size:60px;
+			}
+			.description-div{
+				position:relative;
+				left:340px;
+				top:50px;
+			}
+			.Description-para{
+				position:relative;
+				font-family:forte;
+				left:300px;
+				width:50%;
+				height:170px;
+				top:-40px;
+			}
+			.footer{
+				background-color:#201711;
+				width:100%;
+				height:300px;
+				position:relative;
+				z-index:1;
+				top:300px;
+			}
+			.footer-div{
+				background-color:#e7e7e4;
+				width:100%;
+				height:800px;
+				position:relative;
+				z-index:1;
+				top:0px;
+			}
+			.footer-img{
+				width:100%;
+				height:100%;
+				position:absolute;
+				z-index:1;
+				top:0px;
+			}
+			.footer-img-scroller{
+				width:100%;
+				height:200px;
+				position:sticky;
+				z-index:1;
+				top:90%;
+				background-color:#e7e7e4;
+			}
+			.footer-heading{
+				width:400px;
+				color:white;
+				font-family:forte;
+				font-size:40px;
+				position:absolute;
+				top:70px;
+				left:190px;
+			}
+			.footer-link1{
+				width:150px;
+				position:absolute;
+				top:70px;
+				right:350px;
+			}
+			.footer-link2{
+				width:150px;
+				position:absolute;
+				top:70px;
+				right:100px;	
+			}
+			.footer-link_add{
+				text-decoration:none;
+				color:white;
+				font-size:25px;
+			}
+			.heading-wrap{
+				width:100%;
+				height:auto;
+				background-color:#a47d55;
+				position:relative;
+			}
+			.icon{
+				 color:#a47d55;
+				 text-decoration:none;
+			}
+			.icon:hover{
+				color:white;
+			}
+			.icon-hover1:hover{
+				background-color:white;
+			}
+			.img{
+				position:relative;
+				left:340px;
+				top:80px;
+			}
+			.img6{
+				position:relative;
+				top:80px;
+				width=40%;
+			}
+			.img-common{
+				width:74%;
+				height:550px;
+			}
+			.main{
+				top:0;
+				position:relative;
+				background-color:black;
+				z-index:1;
+				height:auto;
+				width:100%;
+			}
+			.menu{
+				position:absolute;
+				width:50px;
+				height:50px;
+				top:35px;
+				left:23px;
+				cursor:pointer;
+				text-align:center;
+				font-family:forte;
+				color:#a47d55;
+			}
+			.menu1{
+				width:28px;
+				height:2px;
+				margin-left:12px;
+				background-color:#a47d55;
+			}
+			.menu2{
+				width:28px;
+				margin-top:6px;
+				height:2px;
+				margin-left:12px;
+				background-color:#a47d55;
+				-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  				transition: width 1s;
+			}
+			.menu2:hover{
+				margin-left:18px;
+			}
+			.menu3{
+				width:28px;
+				height:2px;
+				margin-top:6px;
+				margin-left:12px;
+				background-color:#a47d55;
+			}
+			.our_community-div{
+				position:relative;
+				top:140px;
+				left:340px;
+			}
+			.our_community-para{
+				position:relative;
+				left:300px;
+				width:50%;
+				height:170px;
+				//background-color:pink;
+				top:-100px;
+			}
+			.para{
+				font-family:Brush Script MT;
+				font-size:24px;
+			}
+			.page-div{
+				position:relative;
+				width:100%;
+				height:auto;
+				left:100px;
+				top:0px;
+			}
+			.page-title{
+				font-size:75px;
+				color:#FFCC66;
+				font-family:freestyle script;
+				position:relative;
+				top:-725px;
+				left:36%;
+			}
+			.png2{
+				height:50%;
+				width:5%;
+				position:absolute;
+				top:30px;
+				right:10%;
+			}
+			.slide{
+				background-color:#201711;
+				width:100px;
+				height:755px;
+				left:0;
+				top:0;
+				position:sticky;
+				text-align:center;
+				font-family:forte;
+				color:#a47d55;
+				z-index:1;
+				-webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+  				transition: width 1s;
+			}
+			.slide:hover{
+   				width:115px;
+				height: 755px;
+			}
+			.slide-inner{
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				position:relative;
+				margin: 0 auto;
+			}
+			.talk{
+				bottom:0;
+				width:100px;
+				height:80px;
+				position:absolute;
+				left:0;
+				cursor:pointer;
+			}
+			#video-frontpage{
+				top:0;
+				min-height:100%;
+				min-width:100%;
+			}
+			.video-frontpage1{
+				position:fixed;
+				width:94%;
+				top:0px;
+				height:750px;
+				overflow-y:hidden;
+				left:100px;
+				z-index:-1;
+			}
+			.try-div{
+				width:100%;
+				height:180px;
+				background-color:#201711;
+				position:relative;
+				top:61%;
+			}
+			.try-title{
+				float:right;
+				font-size:30px;
+				font-family:forte;
+				position:absolute;
+				right:240px;
+				bottom:50px;
+			}
+			p{
+			color:white;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<main class="main">
+			<div class="slide">
+				<div class="slide-inner">
+					<div class="menu">
+						<div class="menu1 icon-hover1"></div>
+						<div class="menu2 icon-hover1"></div>
+						<div class="menu3 icon-hover1"></div>
+						<a class="icon" style="position:relative; top:10px;" href="Contact.html">Home</a>
+					</div>
+					<div class="talk">
+						<a class="icon" style="font-size:20px; "href="talk.html" target="_blank">Talk</a>
+					</div>
+				</div>
+			</div>
+			<div class="page-div">
+				<a class="page-title" href="new.html">Discover Khichan</a>
+					<div class="heading-wrap">
+						<div class="description-div common">
+							<p>Description</p>
+								<div class="Description-para para">
+									<p> Khichan Bird Sanctuary is located at a distace of 171 kms from Jaisalmer city in the village of Khichan. This natural sanctuary serves as home to three types of birds called Kurjan, Karkara and Kunch that migrate from South West Europe, Black Sea region, Poland, Ukraine, Kazakhstan, North and South Africa and Mongolia. These birds can be seen in large numbers at this bird sanctuary between October and March as they migrate to India during this time to avoid the cold winters of Europe. Khichan Bird Sanctuary is popular world wide as the Demoiselle Crane village
+									</p>
+								</div>
+						</div>
+						<br>
+						<br>
+						<br>
+						<br>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.535324568062!2d72.41604791492634!3d27.137911656892133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3940eb64eaf5998b%3A0xb1ff9d8320af94e0!2sKhichan+Bird+Sanctuary!5e1!3m2!1sen!2sin!4v1521525451882" width="850" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<div class="our_community-div common">
+							<p><br>Community</p>
+								<div class="our_community-para para">
+									<p>Currently, the daily feed of the birds is managed by Pakshi Chuggha Ghar of A. B. Khichan Jain Shree Sangh. Donations by locals and tourists support the cause. Previously, monetary donations from local people and visitors were managed by Kuraj Samrakshan Vikas Sansthan, a society established in Khichan for crane protection and care. The Marwar Crane Foundation (MCF) also supports the villagers' efforts.
+									</p>
+								</div>
+						</div>
+			
+						<img class="img6 img-common" src="img6n.jpg" width="650"/>
+						<div style="width:100%; height:360px;">
+							<div class="try-div">
+								<p class="try-title">Just visit once</p>
+								<img class="png2" src="png2.png"/>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="video-frontpage1">
+				<video id="video-frontpage" preload="auto" autoplay="true" width="100%">
+					<source src="video.mp4" type="video/mp4">
+				</video>
+			</div>
+		</main>
+		<div class="footer-div">
+			<div style-"width:100%; overflow:hidden;"><img class="footer-img" src="img5.jpg"/></div>
+			<div class="footer-img-scroller"></div>
+			<div class="footer">
+				<div class="footer-heading">
+					<p>You are welcome<br>for guidance.</p>
+				</div>
+				<div class="footer-link1">
+					<a class="footer-link_add" href="Menu.html">About Us</a>
+					<a class="footer-link_add" style="position:relative; top:7px;" href="contact.html" target="_blank">Contact</a>
+				</div>
+				<div class="footer-link2">
+					<a class="footer-link_add" href="https://twitter.com/login" target="_blank">Twitter</a>
+					<a class="footer-link_add" style="position:relative; top:7px;" href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a>
+					<a class="footer-link_add" style="position:relative; top:13px;" href="https://www.facebook.com/" target="_blank">Facebook</a>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>

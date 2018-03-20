@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="icon" href="student.png"/>
+		<style type="text/css">
+		
+			*{
+				margin:0;
+				padding:0;	
+			}
+			.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #11;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+@media screen and (max-height: 550px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+			body{
+				height:100%;
+				width:100%;
+				background-color:#e7e7e4;
+				position:relative;
+				overflow-x:hidden;
+			}
+			.footer{
+				background-color:#201711;
+				width:100%;
+				height:300px;
+				position:relative;
+				z-index:1;
+				top:300px;
+			}
+			.footer-div{
+				background-color:#e7e7e4;
+				width:100%;
+				height:800px;
+				position:relative;
+				z-index:1;
+				top:0px;
+			}
+			.footer-img{
+				width:100%;
+				height:100%;
+				position:absolute;
+				z-index:1;
+				top:0px;
+			}
+			.footer-img-scroller{
+				width:100%;
+				height:200px;
+				position:sticky;
+				z-index:1;
+				top:90%;
+				background-color:#e7e7e4;
+			}
+			.footer-heading{
+				width:400px;
+				color:white;
+				font-family:forte;
+				font-size:40px;
+				position:absolute;
+				top:70px;
+				left:190px;
+			}
+			.footer-link1{
+				width:150px;
+				position:absolute;
+				top:70px;
+				right:350px;
+			}
+			.footer-link2{
+				width:150px;
+				position:absolute;
+				top:70px;
+				right:100px;	
+			}
+			.footer-link_add{
+				text-decoration:none;
+				color:white;
+				font-size:25px;
+			}
+			.img-div{
+				position:relative;
+				left:65px;
+				width:100%;
+				height:500px;
+				overflow:hidden;
+			}
+			.icon{
+				 color:#a47d55;
+				 text-decoration:none;
+			}
+			.icon:hover{
+				color:white;
+			}
+			.icon-hover1:hover{
+				background-color:white;
+			}
+			.main{
+				top:0;
+				position:relative;
+				background-color:#e7e7e4;
+				z-index:1;
+				height:auto;
+				width:100%;
+			}
+			.menu{
+				position:absolute;
+				width:50px;
+				height:50px;
+				top:35px;
+				left:23px;
+				cursor:pointer;
+				text-align:center;
+				font-family:forte;
+				color:#201711;
+			}
+			.menu1{
+				width:28px;
+				height:2px;
+				margin-left:12px;
+				background-color:#a47d55;
+			}
+			.menu2{
+				width:28px;
+				margin-top:6px;
+				height:2px;
+				margin-left:12px;
+				background-color:#a47d55;
+				-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  				transition: width 1s;
+			}
+			.menu2:hover{
+				margin-left:18px;
+			}
+			.menu3{
+				width:28px;
+				height:2px;
+				margin-top:6px;
+				margin-left:12px;
+				background-color:#a47d55;
+			}
+			.page-description{
+				position:relative;
+				top:10px;
+				background-color:#e7e7e4;
+				width:100%;
+				height:300px;
+				padding:70px;
+			}
+			.page-div{
+				position:absolute;
+				width:100%;
+				height:auto;
+				left:100px;
+				top:0px;
+				font-family:Bradley Hand itc;
+				font-size:30px;
+			}
+			.page-title{
+				font-size:75px;
+				color:#FFCC66;
+				font-family:freestyle script;
+				position:relative;
+				left:36%;
+				top:-10px;
+			}
+			.png2{
+				height:50%;
+				width:5%;
+				position:absolute;
+				top:30px;
+				right:10%;
+			}
+			.slide{
+				background-color:#201711;
+				width:100px;
+				height:760px;
+				left:0;
+				top:0;
+				position:sticky;
+				text-align:center;
+				font-family:forte;
+				color:#a47d55;
+				z-index:1;
+				-webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+  				transition: width 1s;
+			}
+			.slide:hover{
+   				width:115px;
+				height: 755px;
+			}
+			.slide-inner{
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				position:relative;
+				margin: 0 auto;
+			}
+			.try-div{
+				width:100%;
+				height:180px;
+				background-color:#dbdad7;
+				position:relative;
+				top:61%;
+			}
+			.try-title{
+				float:right;
+				font-size:30px;
+				font-family:forte;
+				position:absolute;
+				right:240px;
+				bottom:50px;
+			}
+			.talk{
+				bottom:0;
+				width:100px;
+				height:80px;
+				position:absolute;
+				left:0;
+				cursor:pointer;
+			}
+
+		</style>
+	</head>
+	<body>
+	
+		<main class="main">
+
+			<div class="slide">
+				<div class="slide-inner">
+					<div class="menu">
+						<div class="menu1 icon-hover1"></div>
+						<div class="menu2 icon-hover1"></div>
+						<div class="menu3 icon-hover1"></div>
+						
+						<a class="icon" style="font-size:25px; "href="gallery.html">GALLERY</a>
+						
+					</div>
+					<div class="talk">
+						<a class="icon" style="font-size:25px; "href="talk.html">Talk</a>
+					</div>
+				</div>
+			</div>
+			<div class="page-div">
+			<br>
+				<a class="page-title" href="new.html" style="font-family:Times New Roman ;">Khichan Bird Sanctuary</a>
+				<div class="img-div">
+					<div class="row">
+
+				
+			<div class="row">
+			
+
+<div class="col-sm-3 blog-img">
+<img src="gimg/14.jpg">
+</div>
+
+<div class="col-sm-3 blog-img">
+<img src="gimg/13.jpg">
+</div>
+<div class="col-sm-3 blog-img">
+<img src="gimg/12.jpg">
+</div>
+<br>
+<div class="col-sm-3 blog-img">
+<img src="gimg/11.jpg">
+</div>
+<div class="col-sm-3 blog-img">
+<img src="gimg/10.jpg">
+</div>
+<div class="col-sm-3 blog-img">
+<img src="gimg/9.jpg">
+</div>
+<div class="col-sm-3 blog-img">
+<img src="gimg/8.jpg">
+</div>
+<div class="col-sm-3 blog-img">
+<img src="gimg/7.jpg">
+</div>
+<div class="col-sm-3 blog-img">
+<img src="gimg/6.jpg">
+</div>
+<div class="col-sm-3 blog-img">
+<img src="gimg/5.jpg">
+</div>
+<div class="col-sm-3 blog-img">
+<img src="gimg/4.jpg">
+</div>
+<div class="col-sm-3 blog-img">
+<img src="gimg/2.jpg">
+</div>
+		</main>
+		<div class="footer-div">
+			<div style-"width:100%; overflow:hidden;"><img class="footer-img" src="img5.jpg"/></div>
+			<div class="footer-img-scroller"></div>
+			<div class="footer">
+				<div class="footer-heading">
+					<p>You are welcome<br>for guidance.</p>
+				</div>
+				<div class="footer-link1">
+					<a class="footer-link_add" href="Menu.html">About Us</a>
+					<a class="footer-link_add" style="position:relative; top:7px;" href="contact.html">Contact</a>
+				</div>
+				<div class="footer-link2">
+					<a class="footer-link_add" href="https://twitter.com/login" target="_blank">Twitter</a>
+					<a class="footer-link_add" style="position:relative; top:7px;" href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a>
+					<a class="footer-link_add" style="position:relative; top:13px;" href="https://www.facebook.com/" target="_blank">Facebook</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
